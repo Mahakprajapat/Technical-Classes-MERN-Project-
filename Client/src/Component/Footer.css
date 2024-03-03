@@ -1,0 +1,10 @@
+footer .container{
+    max-width: 1400rem;
+    padding: 4rem 3rem;
+    text-align: center;
+    color: white;
+    background-color: #646cff;
+}
+h2{
+    margin: auto;
+}

@@ -1,0 +1,25 @@
+.container{
+    max-width: 1400rem;
+    padding: 4rem 3rem;
+    display: flex;
+    justify-content: space-between;
+    
+}
+.logo-brand{
+    font-size: 1.9rem;
+    color: rgb(225, 216, 216);
+}
+header{
+    /* background: linear-gradient(130deg , #e69a60 , #34312d );
+     */
+     background-color: rgb(14, 13, 13);
+     position: sticky;
+     top: 0;
+     z-index: 999999;
+}
+ul{
+    display: flex;
+    gap: 3rem;
+    list-style: none;
+    color: black;
+}

@@ -1,0 +1,518 @@
+*{
+  margin:0;
+  padding:0;
+  box-sizing: border-box;
+  color-scheme: light dark;
+  /* background: linear-gradient(135deg , #153677 , #4e085f ); */
+}
+:root{
+  --bg-color:#f4f3ff;
+  --btn-color:#646cff;
+  --dark-color:#242424;
+  --helper-color:#99b9ff;
+}
+html{
+  font-size: 62.5%;
+}
+/* base style */
+body{
+  margin: 0;
+  /* min-width: 30rem; */
+  min-height: 100vh;
+}
+h1{
+  font-size: 5.4rem;
+  line-height: 1.1;
+  font-weight: bold;
+}
+p,
+li,
+label,
+input,
+textarea{
+  font-size: 1.8rem;
+  line-height: 1.56;
+  letter-spacing: 0.1rem;
+  word-spacing: 0.06rem;
+}
+
+a{
+  font-weight: 500;
+  font-size: 1.8rem;
+  letter-spacing: 0.1rem;
+  color: white;
+  text-decoration: inherit;
+}
+/* layout  */
+.container{
+  max-width: 125rem;
+  padding: 4rem 2.4rem;
+  margin: 0 auto;
+}
+/* home page */
+.maindiv{
+  width:100%;
+  height:700px;
+  background: url("../public/images/the-town-bg-01.jpg") fixed center no-repeat;
+  background-size: cover;
+}
+.grid{
+  display: grid;
+  gap: 6.4rem;
+}
+.grid-two-cols{
+  grid-template-columns: repeat(2,1fr);
+}
+.section-hero {
+    align-items: center;
+}
+.hero-content{
+  margin-top: 60px;
+}
+.hero-content p{
+    margin: 2.4rem 0 4.8rem 0;
+    &:first-child{
+      margin:0 0 1.2rem 0;
+    }
+}
+
+
+
+
+
+/* button */
+button{
+text-transform: capitalize;
+padding: 1rem 2.2rem;
+font-size: 1.7rem;
+font-weight: 500;
+background-color: #29252a;
+border-radius: 0.8rem;
+border: .1rem solid transparent;
+cursor: pointer;
+letter-spacing: 0.1rem;
+transition: border-color 0.3s;
+margin-top: 1rem;
+}
+button:hover{
+  /* background-color: var(--btn-color); */
+  box-shadow:  0 0 0 0.2rem white ;
+}
+
+a:hover,
+a.active{
+  color: #8f91ac;
+}
+.secondary-btn{
+  background-color: transparent;
+  margin-left:2.5rem;
+  box-shadow:  0 0 0 0.1rem white ;
+}
+
+
+.section-analytics{
+  margin: 9.6rem 0;
+}
+.section-analytics .container{
+  background-color: var(--bg-color);
+  border-radius: 1rem;
+  color:var(--dark-color);
+}
+.section-analytics .div1{
+  text-align: center;
+  border-right: 1px solid black;
+  font-weight: 600;
+}
+.section-analytics .div1 h2{
+  font-size: 4rem;
+}
+.section-analytics .div1:last-child{
+  border: none;
+}
+.grid-four-cols{
+   grid-template-columns: repeat(4, 1fr);
+}
+
+/* contact-from  */
+.section-contact .contact-content h1{
+ padding: 0;
+ margin-bottom: 1.5rem;
+}
+.section-contact .container{
+  padding-top: 0.1rem;
+}
+.contact-img{
+  display: flex;
+  justify-content: start;
+  align-items: center;
+}
+.contact-img img{
+  width: 80%;
+  height:auto;
+}
+.contact-form {
+  display: flex;
+  flex-direction: column;
+ 
+}
+
+.contact-form label{
+  display: block;
+  margin-bottom: 1rem;
+  margin-top: 1.5rem;
+  text-transform: capitalize;
+}
+.contact-form input{
+  width: 80%;
+  padding: 0.1rem 0.4rem;
+}
+.contact-form textarea{
+  width: 80%;
+  padding: 0.1rem 0.4rem;
+}
+
+/** -----------------------
+** registration section css
+** -------------------------  */
+
+.section-registration {
+  padding: 0 3.2rem;
+}
+  .section-registration .container {
+    /* background-color: #fff; */
+    padding-top: 3.2rem;
+    align-items: center;
+  }
+  .section-registration .container    img {
+      width: 80%;
+      height: auto;
+    }
+  
+
+ .registration-form  label {
+      display: block;
+      margin: 2.4rem 0 0.8rem 0;
+      text-transform: capitalize;
+    }
+    .registration-form   input {
+      width: 80%;
+      padding: 0.6rem 0.6rem;
+    }
+
+    .registration-form button {
+      margin-top: 3.2rem;
+    }
+  
+
+/*admin  */
+.adminNav ul {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.adminContainer {
+  display: grid;
+  padding-top: 0;
+  grid-template-columns: 1fr 3fr;
+}
+
+.adminList {
+  flex-direction: column;
+  list-style-type: none;
+}
+
+.adminList li {
+  display: grid;
+  grid-template-columns: 1fr 2fr 1fr 1fr;
+}
+
+table{
+  background: #fff;
+  box-shadow: rgba(255,255,255,0) 0px 7px 29px 0px;
+  border-collapse: collapse;
+  border-radius: 1rem;
+}
+th{
+  font-size: 1.8rem;
+  letter-spacing: 0.1rem;
+  padding: 3rem;
+  color: var(--dark-color);
+  box-shadow: 0 0.3rem 0 grey;
+  margin-bottom: 10px;
+  text-transform: capitalize;
+}
+td{
+  font-size: 1.7rem;
+  letter-spacing: 0.1rem;
+  padding: 3rem;
+  text-align: center;
+  color: var(--dark-color);
+  width: 30rem;
+}
+ tr{
+  /* display: grid; */
+  /* grid-template-columns: repeat(5,minmax(10rem,1 fr)); */
+  align-items: center;
+  box-shadow: 0 0.3rem 0 grey;
+  margin-bottom: 10px;
+  border-bottom: 4px solid transparent;
+  color: var(--bg-color);
+}
+
+.updateLink{
+  background-color: #cff6dd;
+  color: #1fa750;
+  /* margin-top: 10px; */
+  border-radius: 3rem;
+  padding: 1rem 3rem;
+}
+.updateLink:hover{
+  color: #cff6dd;
+  background-color: #1fa750 ;
+  font-weight: bold;
+}
+
+.admin-section-form{
+  background-color: var(--bg-color);
+  max-width: 60rem;
+  padding: 0 10rem;
+  color: var(--dark-color);
+  margin-left: 10rem;
+}
+.admin-section-form form{
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  padding: 5rem;
+}
+.admin-section-form div{
+  display: grid;
+}
+.admin-section-form input{
+  background-color: var(--helper-color);
+  border: none;
+  padding: 1.4rem 0rem 1.4rem 2rem;
+  color: var(--dark-color);
+}
+.admin-section-form input{
+  max-width: 30rem;
+}
+.admin-users button{
+  border-radius: 3rem;
+  padding: 1rem 3rem;
+}
+.admin-users button:hover{
+  background-color: #1fa750 ;
+  font-weight: bold;
+}
+
+/* login page */
+.main-heading{
+  position: relative ;
+  text-transform: capitalize;
+}
+.main-heading::after{
+  content:"";
+  position: absolute;
+  left:0;
+  bottom: 0;
+  width: 50%;
+  height: 0.5rem;
+  background-color: var(--btn-color);
+}
+.section-login {
+  padding: 0 3.2rem;
+}
+  .section-login .container {
+    /* background-color: #fff; */
+    padding-top: 3.2rem;
+    align-items: center;
+  }
+  .section-login .container    img {
+      width: 80%;
+      height: auto;
+    }
+  
+
+ .login-form  label {
+      display: block;
+      margin: 2.4rem 0 0.8rem 0;
+      text-transform: capitalize;
+    }
+    .login-form   input {
+      width: 80%;
+      padding: 0.6rem 0.6rem;
+    }
+
+    .login-form button {
+      margin-top: 3.2rem;
+    }
+  
+/* error */
+/* error page  */
+#error-page {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#error-page .content {
+  max-width: 70rem;
+  text-align: center;
+}
+.content h2.header {
+  font-size: 18vw;
+  line-height: 1em;
+  animation: animate 10s ease-in-out infinite;
+  background: -webkit-repeating-linear-gradient(
+    -60deg,
+    #71b7e6,
+    var(--btn-color),
+    #b98acc,
+    #ee8176,
+    #b98acc,
+    var(--btn-color),
+    #9b59b6
+  );
+  background-size: 500%;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-shadow: 1px 1px 2px rgba(255, 255, 255, 0.25);
+  position: relative;
+  -webkit-animation: animate 10s ease-in-out infinite;
+}
+
+@keyframes animate {
+  0% {
+    background-position: 0 0;
+  }
+  25% {
+    background-position: 100% 0;
+  }
+  50% {
+    background-position: 100% 100%;
+  }
+  75% {
+    background-position: 0% 100%;
+  }
+  100% {
+    background-position: 0% 0%;
+  }
+}
+.content h4 {
+  
+  margin: 20px 0px;
+  text-transform: uppercase;
+  font-size: 2rem;
+}
+
+.content .btns {
+  margin: 40px 0;
+  display: inline-flex;
+  justify-content: center;
+}
+.content .btns a {
+  display: inline-block;
+  margin: 0 10px;
+  text-decoration: none;
+  border: 2px solid var(--btn-color);
+  color: var(--btn-color);
+  font-weight: 500;
+  padding: 10px 25px;
+  border-radius: 25px;
+  text-transform: uppercase;
+  transition: all 0.3s ease;
+}
+.content .btns a:hover {
+  /* background: var(--btn-color); */
+  color: #fff;
+}
+
+/** -----------------------
+** media query section css
+** -------------------------  */
+
+@media (width <= 998px) {
+  .grid-two-cols {
+    grid-template-columns: 1fr;
+  }
+
+  .section-services .grid-three-cols {
+      grid-template-columns: repeat(auto-fill, minmax(30rem, 1fr));
+    }
+  
+
+  .section-registration .container  .reg-img img {
+        width: 60%;
+        height: auto;
+      }
+    
+  
+}
+/** -----------------------
+** services section css
+** -------------------------  */
+
+.section-services .container:first-child {
+    padding: 0;
+  }
+  .section-services  .grid-three-cols {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 3.2rem;
+  }
+
+  .section-services .card {
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+    border: 0.2rem solid var(--helper-color);}
+
+    .section-services  .card-img {
+      text-align: center;}
+      .section-services  img {
+        width: 60%;
+        height: auto;
+        filter: drop-shadow(0 0 2rem 2rem #fff);
+        -webkit-filter: drop-shadow(0 0 2rem 2rem #fff);
+      }
+    
+
+      .section-services  .card-details {
+      padding: 2.4rem;
+      }
+      .section-services  .grid p {
+        font-size: 1.4rem;
+      }
+
+      .section-services  h2 {
+        font-size: 3.2rem;
+        margin: 1.2rem 0 2.4rem 0;
+      }
+    
+
+
+
+
+
+
+
+
+
+@media (width <= 798px) {
+  html {
+    font-size: 56.25%;
+  }
+
+  .section-registration  .container.reg-img img {
+        width: 50%;
+        height: auto;
+      }
+    
+
+      .section-registration    .registration-form input {
+        width: 100%;
+        padding: 0.6rem 0.6rem;
+      }
+    
+  
+}
