@@ -6,7 +6,7 @@ Admin Dashboard
 
 JWT verification
 
-Sign-in & Sign-up pages
+Sign-in & Sign-up page
 
 Uses MongoDB atlas for storing the collection
 
